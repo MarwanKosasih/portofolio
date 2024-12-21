@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- dark mode -->
+    <link rel="stylesheet" href="/assets/css/darkmode.css">
+
+    <link rel="stylesheet" href="/assets/css/fontawesome/css/all.min.css">
+    
+    <title>Marwan Kosasih | windows 11</title>
+  </head>
+  <body>
+    <input type="checkbox" class="custom-control-input bg-danger" id="darkSwitch">
+
+    <audio autoplay>
+      <source src="/assets/audio/windows11.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="jumbotron-wallpaper jumbotron-fluid">
+      <div class="position-fixed bottom-100 right-0 p-3" style="z-index: 5; right: 0; bottom: 40px;">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-delay="7000">
+          <div class="toast-header">
+            <img src="/assets/img/profile2.jpeg" class="rounded mr-2" width="25  " height="25">
+            <strong class="mr-auto">WhatsApp</strong>
+            <small>Just now</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body">
+            "Halo, Selamat datang di website portofolio saya!
+**Saya Marwan Kosasih, dan di sini Anda akan menemukan perjalanan saya dalam dunia teknologi dan pemrograman. Jelajahi karya-karya dan proyek saya, dan mari berkolaborasi untuk menciptakan sesuatu yang luar biasa! 🚀"<br>
+            
+            <a id="balas" class="reply">reply</a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+
+        <div class="trash">
+          <div class="bar-trs">
+            <div class="exit-trs">
+              <i class="fas fa-times ex-wht"></i>
+            </div>
+          </div>
+          <img src="/assets/img/success.gif" alt="">
+        </div>
+
+        <div class="settings">
+          <h2>coming soon</h2>
+          <i class="fas fa-chevron-right" id="set-close"></i>
+        </div>
+
+        <div class="kalkulator">
+          <div class="bar-kal">
+            <div class="exit-kal">
+              <i class="fas fa-times ex-kal"></i>
+            </div>
+            <div class="minim-kal">
+              <i class="fas fa-minus"></i>
+            </div>
+          </div>
+
+          <div class="engine">
+            <form name="form">
+                <input type="text" name="hasil" class="hasil">
+            </form>
+    
+            <table>
+                <br>
+    
+                <tr>
+                    <td><input type="button" class="button" value="C" onclick="clean()"></td>
+                    <td><input type="button" class="button" value="<" onclick="back()"></td>
+                    <td><input type="button" class="button" value="/" onclick="insert('/')"></td>
+                    <td><input type="button" class="button" value="x" onclick="insert('*')"></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="button" class="button" value="7" onclick="insert(7)"></td>
+                    <td><input type="button" class="button" value="8" onclick="insert(8)"></td>
+                    <td><input type="button" class="button" value="9" onclick="insert(9)"></td>
+                    <td><input type="button" class="button" value="-" onclick="insert('-')"></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="button" class="button" value="4" onclick="insert(4)"></td>
+                    <td><input type="button" class="button" value="5" onclick="insert(5)"></td>
+                    <td><input type="button" class="button" value="6" onclick="insert(6)"></td>
+                    <td><input type="button" class="button" value="+" onclick="insert('+')"></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="button" class="button" value="3" onclick="insert(3)"></td>
+                    <td><input type="button" class="button" value="2" onclick="insert(2)"></td>
+                    <td><input type="button" class="button" value="1" onclick="insert(1)"></td>
+                    <td rowspan="5"><input type="button" class="button blue" value="=" onclick="equal()"></td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2"><input type="button" class="button null" value="0" onclick="insert(0)"></td>
+                    <td><input type="button" class="button" value="." onclick="insert('.')"></td>
+                </tr>
+            </table>
+        </div>
+        </div>
+
+        <div class="whatsapp">
+          <div class="bar">
+            <div class="exit-wht">
+              <i class="fas fa-times ex-wht"></i>
+            </div>
+            <div class="show-wht">
+              <i class="fas fa-window-maximize"></i>
+            </div>
+            <div class="show-min-wht">
+              <i class="fas fa-window-restore min-wht"></i>
+            </div>
+            <div class="minim-wht">
+              <i class="fas fa-minus"></i>
+            </div>
+          </div>
+          <div class="wa">
+            <div class="content">
+                  <div class="detail">
+                    <i class="fas fa-arrow-left"></i>
+                    <img src="/assets/img/profile2.jpeg" alt="">
+                    <h4>Marwan Kosasih</h4>
+                  </div>
+                  <div class="bar-menu">
+                    <i class="fas fa-video"></i>
+                    <i class="fas fa-phone-alt"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                  </div>
+            </div>
+            <div class="pesan">
+              <p>"My Portfolio: A Reflection of Passion and Dedication"</p>
+            </div>
+            <div class="pesan">
+              <p> "Hi, I’m Marwan Kosasih, a passionate Information Technology student at Universitas Pamulang with a strong interest in software development, problem-solving, and innovation. I am currently in my 5th semester, actively honing my skills in programming, data analysis, and system design. With experience in leadership, teamwork, and hands-on technical roles, I aim to contribute to impactful projects and continuously grow in the tech industry. Let’s connect and collaborate!"
+              </p>
+            </div>
+
+            <div class="container">
+              <div class="chat">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text emo">
+                      <i class="far fa-grin"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="type message" id="pesan" onkeydown="validation()">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fas fa-paperclip"></i>
+                    </span>
+                    <span class="input-group-text cam">
+                      <i class="fas fa-camera"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="vn">
+                  <i class="fas fa-microphone"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-windows">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <div class="skill-me">
+            <h1 class="title">Skill</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <img src="/assets/img/skill/732212.png" class="img-skill">
+              </div>
+              <div class="col-sm-4">
+                <img src="/assets/img/skill/css-131-722685.png" class="img-skill">
+              </div>
+              <div class="col-sm-4">
+                <img src="/assets/img/skill/javascript-2752148-2284965.png" class="img-skill">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <img src="/assets/img/skill/flutter-2038877-1720090.png" class="img-skill">
+              </div>
+              <div class="col-sm-4">
+                <img src="/assets/img/skill/figma-2296071-1912030.png" class="img-skill">
+              </div>
+              <div class="col-sm-4">
+                <img src="/assets/img/skill/1200px-Laravel.svg.png" class="img-skill">
+              </div>
+            </div>
+          </div>
+          <hr>
+          </div>
+          <div class="detail-me">
+            <h1 class="title">Tentang Saya</h1>
+            <div class="container">
+              "Hai! Saya Marwan Kosasih, seorang pencari ilmu di Universitas Pamulang, jurusan Teknik Informatika. Passion saya ada di dunia coding, inovasi teknologi, dan membangun solusi digital untuk masa depan. Let’s connect and grow together! 🌟"
+
+            </div>
+            <hr>
+          </div>
+          <div class="footer">
+                <div class="detail">
+                  <div class="d-flex align-items-end" href="#">
+                    <img src="/assets/img/profile2.jpeg" width="40" height="40" class="rounded-circle">
+                    <h1 class="name">Marwan Kosasih</h1>
+                  </div>
+                </div>
+                <div class="cls">
+                  <button type="button" class="btn float-right" id="cls">
+                    <i class="fas fa-power-off"></i>
+                  </button>
+                </div>
+          </div>
+        </div>
+
+        <div class="openfile">
+          <div class="bar">
+            <div class="exit">
+              <i class="fas fa-times ex"></i>
+            </div>
+            <div class="show">
+              <i class="fas fa-window-maximize"></i>
+            </div>
+            <div class="show-min">
+              <i class="fas fa-window-restore min"></i>
+            </div>
+            <div class="minim">
+              <i class="fas fa-minus"></i>
+            </div>
+          </div>
+          <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">All</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Website</a>
+              </li>
+
+
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="sertifikat-tab" data-toggle="tab" href="#sertifikat" role="tab" aria-controls="contact" aria-selected="false">Certificate</a>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row mt-2">
+                  <div class="col-sm-3">
+                    <div id="list-example" class="list-group">
+                      <a class="list-group-item" href="#list-item-5"><img src="/assets/img/folder.png" class="icon"> Login UI Application</a>
+                      <a class="list-group-item" href="#list-item-1"><img src="/assets/img/folder.png" class="icon"> Calculator Application</a>
+                      <a class="list-group-item" href="#list-item-4"><img src="/assets/img/folder.png" class="icon"> Aplikasi Game Tetris </a>
+                      <a class="list-group-item" href="#list-item-2"><img src="/assets/img/folder.png" class="icon"> Certificate HTML</a>
+                      <a class="list-group-item" href="#list-item-3"><img src="/assets/img/folder.png" class="icon"> Certificate Javascript</a>
+                      <a class="list-group-item" href="#list-item-6"><img src="/assets/img/folder.png" class="icon"> Certificate CSS</a>
+                      <a class="list-group-item" href="#list-item-7"><img src="/assets/img/folder.png" class="icon"> Certificate JavaScript Intermediate</a>
+                      <a class="list-group-item" href="#list-item-8"><img src="/assets/img/folder.png" class="icon"> Diagram Penjualan</a>
+            
+
+                    </div>
+                  </div>
+
+                  <div class="col-sm-8 d-flex align-items-center">
+                    <div class="container">
+
+                      <div class="jumbotron content" id="list-item-5">
+                        <h3>Halaman Login</h3>
+                        <img src="/assets/img/my works/login-ui.png" class="img-fluid">
+                        <p>"Halaman login ini merupakan gerbang utama untuk mengakses layanan dan fitur eksklusif."
+                        </p>
+                        <a href="https://marwankosasih.github.io/Login/" class="btn btn-blue" target="_blank" rel="noopener noreferrer">Kunjungi</a>
+                      </div>
+                        
+                        <div class="jumbotron content" id="list-item-1">
+                          <h3>Kalkulator JS</h3>
+                          <img src="/assets/img/my works/dua.jpg" class="img-fluid">
+                          <p>"Hitung lebih cepat, kerja lebih ringan. Kalkulator simpel, hasil maksimal! ✅"
+                          </p>
+                          <a href="https://marwankosasih.github.io/Calculator/" class="btn btn-blue" target="_blank" rel="noopener noreferrer">Kunjungi</a>
+                        </div>
+
+                        <div class="jumbotron content" id="list-item-2">
+                          <h3>Certificate Introduction To HTML</h3>
+                          <img src="/assets/img/my works/sertifikat_html.png" class="img-fluid">
+                          <p>"Sertifikat Introduction to HTML berhasil diraih! Siap membangun web dari dasar ke level berikutnya."
+                          </p>
+                          <a href="https://www.sololearn.com/certificates/CC-WYKDP2XB" class="btn btn-blue" target="_blank" rel="noopener noreferrer">Kunjungi</a>
+                        </div>
+
+                        <div class="jumbotron content" id="list-item-3">
+                          <h3>Certificate Introduction To JavaScript</h3>
+                          <img src="/assets/img/my works/Introduction to Javascript ( Marwan Kosasih ).jpg" class="img-fluid">
+                          <p>"JavaScript: bahasa pemrograman yang membawa halaman web menjadi hidup. Sertifikat ini adalah awal perjalanan saya di dunia coding! 🚀"
+                          </p>
+                          <a href=" https://marwankosasih.github.io/Calculator/" class="btn btn-blue" target="_blank" rel="noopener noreferrer">Kunjungi</a>
+                        </div>
+
+                        <div class="jumbotron content" id="list-item-4">
+                          <h3>Game Tetris</h3>
+                          <img src="/assets/img/my works/tetris.png" class="img-fluid">
+                          <p>"Seperti hidup, susun setiap langkah dengan cermat. Blok yang jatuh bisa jadi kemenangan! 🔥"
+
+
+                          </p>
+                          <a href="https://marwankosasih.github.io/GameTetris/" class="btn btn-blue" target="_blank" rel="noopener noreferrer">Kunjungi</a>
+                        </div>
+                        
+                        <div class="jumbotron content" id="list-item-6">
+                          <h3>Certificate Introduction To CSS</h3>
+                          <img src="/assets/img/my works/Introduction to CSS (Marwan Kosasih).png" class="img-fluid">
+                          <p>"CSS: Seni mengubah kode menjadi desain visual yang menarik. Sertifikat ini adalah bukti langkah awal saya dalam dunia front-end development! 🚀"
+                          </p>
+                          <a href="https://www.sololearn.com/certificates/CC-ZHJXU8TT" class="btn btn-blue" target="_blank" rel="noopener noreferrer">Kunjungi</a>
+                        </div>
+                        
+                        <div class="jumbotron content" id="list-item-7">
+                          <h3>Certificate JavaScript Intermediate</h3>
+                          <img src="/assets/img/my works/JavaScript Intermediate (Marwan Kosasih).png" class="img-fluid">
+                          <p>"Level up! Sertifikasi JavaScript Intermediate ini membawa saya selangkah lebih dekat menjadi seorang developer berkelas. Mari terus belajar dan berkreasi! 🌟"
+                          </p>
+                          <a href="https://www.sololearn.com/certificates/CC-3BP2TVLG" class="btn btn-blue" target="_blank" rel="noopener noreferrer">Kunjungi</a>
+                        </div>
+
+                        <div class="jumbotron content" id="list-item-8">
+                          <h3>Diagram Penjualan</h3>
+                          <img src="/assets/img/my works/Diagram penjualan.png" class="img-fluid">
+                          <p>"Tren Penjualan Tahunan (2022-2024)", "Memvisualisasikan pertumbuhan dan perubahan dalam penjualan selama tiga tahun terakhir." </p>
+                          <a href="https://marwankosasih.github.io/Diagram-Penjualan/" class="btn btn-blue" target="_blank" rel="noopener noreferrer">Kunjungi</a>
+                        </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="page">
+                  
+                <div class="web mt-3">
+                    <div class="box">
+                      <img src="/assets/img/my works/login-ui.png" alt="">
+                    </div>
+                    <div class="box">
+                      <img src="/assets/img/my works/tetris.png" alt="">
+                    </div>
+                    <div class="box">
+                      <img src="/assets/img/my works/dua.jpg" alt="">
+                    </div>
+                    <div class="box">
+                      <img src="/assets/img/my works/Diagram penjualan.png" alt="">
+                    </div>
+                </div>
+                
+                </div>
+              </div>
+              
+              <div class="tab-pane fade" id="sertifikat" role="tabpanel" aria-labelledby="sertifikat-tab">
+                <div class="page">
+                  <div class="web mt-3">
+                    <div class="box">
+                      <img src="/assets/img/my works/sertifikat_html.png" alt="">
+                    </div>
+
+                    <div class="box">
+                      <img src="/assets/img/my works/Introduction to Javascript ( Marwan Kosasih ).jpg" alt="">
+                    </div>
+
+                    <div class="box">
+                      <img src="/assets/img/my works/Introduction to CSS (Marwan Kosasih).png" alt="">
+                    </div>
+
+                    <div class="box">
+                      <img src="/assets/img/my works/JavaScript Intermediate (Marwan Kosasih).png" alt="">
+                    </div>
+                </div>
+                
+                
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="page">
+                  <div class="container">
+                    <div class="alert alert-success" role="alert">
+                      <div class="row d-flex align-items-center">
+                        <div class="col-sm-11">
+                          <p>FreeCodeCamp Html and Css</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <div class="icon fas fa-eye"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="sertifikat" role="tabpanel" aria-labelledby="sertifikat-tab">
+                <div class="page">
+                  <div class="container">
+                    <div class="alert alert-success" role="alert">
+                      <div class="row d-flex align-items-center">
+                        <div class="col-sm-11">
+                          <p>FreeCodeCamp Html and Css</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <div class="icon fas fa-eye"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ================================================================================================================================= -->
+
+        <!-- whatsapp -->
+        <button type="button" class="btn" id="wa">
+          <img src="/assets/img/wa.png" alt=""><br>
+          WhatsApp
+      </button>
+      <!-- folder  -->
+      <button type="button" class="btn" id="file">
+        <img src="/assets/img/file-explorer-folder-libraries-icon-18298.png" alt=""><br>
+        Folder Portofolio
+      </button>
+    <br>
+      <!-- whatsapp -->
+      <button type="button" class="btn" id="clear">
+        <img src="/assets/img/Recycle_Bin_Windows_11_empty.png" alt=""><br>
+        Recycle bin
+      </button>
+        <br>
+        
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-bottom">
+        <ul id="mydiv">
+          <li>
+            <img src="/assets/img/windows.png" class="img" id="windows">
+          </li>
+          <li>
+              <label for="darkSwitch">
+                <img src="/assets/img/dark-mode.png" class="img">
+              </label>
+          </li>
+          <li>
+              <img src="/assets/img/file-explorer-folder-libraries-icon-18298.png" class="img" id="file2">
+          </li>
+          <li><img src="/assets/img/sportify.png" class="img" id="comming"></li>
+          <li><img src="/assets/img/kalkulator.png" class="img" id="icon-kalkulator"></li>
+          <li><img src="/assets/img/settings.png" class="img" id="set"></li>
+        </ul>
+        <div class="time">
+          <div class="btn-group dropup">
+            <button class="btn up-drop" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-chevron-up"></i>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#"><i class="fab fa-github"></i> GitHub</a>
+              <a class="dropdown-item" href="#"><i class="fab fa-facebook"></i> Facebook</a>
+              <a class="dropdown-item" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              <a class="dropdown-item" href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+          </div>
+          <i id="fullscreen" class="fas fa-expand"></i>
+          <i class="fas fa-volume-up"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-full"></i>
+          <h5 id="tanggalwaktu"></h5>
+          <script>
+          </script>
+        </div>
+      </nav>
+
+
+      <script>
+        var screen = document.getElementById('fullscreen');
+        var el = document.documentElement;
+        screen.onclick = function(){
+            el.requestFullscreen();
+        }
+      </script>
+
+    <script src="/assets/js/dark-mode-switch.js"></script>
+    <script src="/assets/js/open-trash.js"></script>
+    <script src="/assets/js/settings.js"></script>
+    <script src="/assets/js/calculator.js"></script>
+    <script src="/assets/js/file.js"></script>
+    <script src="/assets/js/open-whatsapp.js"></script>
+    <script src="/assets/js/open-windows.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    <script>
+      var comming = document.getElementById('comming');
+
+      comming.onclick = function(){
+        alert('CommingSoon Pak!');
+      }
+      
+      $(document).on('click','.list-group-item',function(){
+        $(this).addClass('open').siblings().removeClass('open')
+      })
+
+      $(document).on('click','ul li',function(){
+        $(this).addClass('active').siblings().removeClass('active')
+      })
+
+      $('.toast').toast('show');
+
+      var dt = new Date();
+          document.getElementById("tanggalwaktu").innerHTML = ((dt.getHours())) +":"+ ((dt.getMinutes()));
+          // document.getElementById("tanggalwaktu").innerHTML = (("0"+dt.getHours()+1).slice(-2)) +":"+ (("0"+dt.getMinutes()+1).slice(-2));
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script>
+  var memo;
+  var a = 5;
+  $('.whatsapp,.kalkulator,.openfile,.trash').draggable({
+      cursor: "grabbing",
+      snap:true,
+      snapTolerance:30,
+      // zIndex: a++,
+    start: function() {
+      memo = $(this).css('transition');
+      $(this).css("z-index", a++);
+      $(this).css('transition', 'none');
+    },
+    stop: function() {
+      $(this).css('transition', memo);
+    }
+  });
+
+  $('#mydiv').sortable({
+    // distance:50,
+    container:"parent",
+    cursor:"grabbing",
+    axis : "x",
+    start: function() {
+      memo = $(this).css('transition');
+      $(this).css('transition', 'none');
+    },
+    stop: function() {
+      $(this).css('transition', memo);
+    }
+  });
+</script>
+  </body>
+</html>
